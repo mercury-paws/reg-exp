@@ -1,4 +1,41 @@
 Phone Number Validation
 // Matches phone numbers like: 123-456-7890, (123) 456-7890, 123 456 7890
-
 /^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/
+
+
+Email Validation
+// Matches simple emails like: user@example.com
+/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/
+
+URL Validation
+// Matches URLs like: https://example.com, http://example.com, www.example.com
+/^(https?:\/\/)?([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,6}(\/[a-zA-Z0-9\-._~:/?#[\]@!$&'()*+,;=]*)?$/
+
+Password Validation
+// At least 8 characters, at least one lowercase, one uppercase, and one digit
+/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$/
+
+Zip Code Validation
+// Matches ZIP codes: 12345 or 12345-6789
+/^\d{5}(-\d{4})?$/
+
+Credit Card Validation
+// Matches credit card numbers like: 1234 5678 9876 5432 or 1234-5678-9876-5432
+/^(\d{4}[-\s]?){3}\d{4}$/
+
+Date Validation (YYYY-MM-DD Format)
+// Matches dates like: 2025-02-25
+/^\d{4}-\d{2}-\d{2}$/
+
+ Time Validation (HH:MM Format)
+// Matches time like: 23:59
+^([01]?[0-9]|2[0-3]):([0-5][0-9])$
+
+Username Validation
+// Matches usernames like: user_123, user-name
+/^[a-zA-Z0-9_-]{3,16}$/
+
+Alphanumeric String (Letters and Digits)
+// Matches alphanumeric strings: "abc123", "A1b2C3"
+/^[a-zA-Z0-9]+$/
+
